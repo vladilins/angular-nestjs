@@ -1,5 +1,5 @@
 export class AddDto {
-  readonly id: number;
+  readonly _id: number;
   readonly title: string;
   readonly text: string;
   readonly url: string;

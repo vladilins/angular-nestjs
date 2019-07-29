@@ -1,5 +1,5 @@
 export interface Add {
-  id: number;
+  _id: number;
   title: string;
   text: string;
   url: string;

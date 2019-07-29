@@ -7,9 +7,7 @@ import config from './config/keys';
 import { MulterModule } from '@nestjs/platform-express';
 
 @Module({
-  imports: [AdsModule, MongooseModule.forRoot(config.mongoURI), MulterModule.register({
-    dest: './uploads'
-  })],
+  imports: [AdsModule, MongooseModule.forRoot(config.mongoURI)],
   controllers: [AppController],
   providers: [AppService],
 })
