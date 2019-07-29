@@ -54,8 +54,6 @@ export class AdsController {
       url: createdAddDto.url,
       order: createdAddDto.order
     }
-    // console.log(post);
-    
     
     return this.adsService.create(post);
   }
@@ -81,8 +79,6 @@ export class AdsController {
   }))
   update(@Body() updateAddDto: AddDto, @Param('id') id, @UploadedFile() file, @Req() req): Promise<Add> {
     const url = req.protocol + "://" + req.get("host");
-    console.log(updateAddDto.imageUrl);
-    
 
     const post = {
       _id: updateAddDto._id,
@@ -92,7 +88,7 @@ export class AdsController {
       url: updateAddDto.url,
       order: updateAddDto.order,
     }
-    // console.log(post._id);
+
     return this.adsService.update(id, post);
   }
 }
