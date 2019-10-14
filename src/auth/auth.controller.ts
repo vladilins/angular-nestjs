@@ -7,7 +7,7 @@ import {
   Body,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import * as bcrypt from 'bcrypt';
+import * as bcrypt from 'bcryptjs';
 import { AuthService } from './auth.service';
 import { UserDto } from '../users/user.dto';
 import { UsersService } from '../users/users.service';

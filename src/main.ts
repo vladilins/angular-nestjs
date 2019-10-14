@@ -6,7 +6,10 @@ import * as helmet from 'helmet';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const corsOptions = {
-    origin: 'http://localhost:4200',
+    origin: [
+      'http://localhost:4200',
+      'http://ads-admin-nestjs.s3-website.us-east-2.amazonaws.com',
+    ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   };
   app.use(
@@ -16,7 +19,7 @@ async function bootstrap() {
     }),
   );
   app.use(helmet());
-  app.enableCors(corsOptions);
-  await app.listen(3000);
+  app.enableCors();
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
