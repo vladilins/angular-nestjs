@@ -23,17 +23,19 @@ import { AuthGuard } from '@nestjs/passport';
 export class AdsController {
   constructor(private readonly adsService: AdsService) {}
 
-  // @UseGuards(AuthGuard('jwt'))
+  @UseGuards(AuthGuard('jwt'))
   @Get()
   findAll(): Promise<Add[]> {
     return this.adsService.findAll();
   }
 
+  @UseGuards(AuthGuard('jwt'))
   @Get(':id')
   findOne(@Param('id') id): Promise<Add> {
     return this.adsService.findOne(id);
   }
 
+  @UseGuards(AuthGuard('jwt'))
   @Post()
   @UseInterceptors(
     FileInterceptor('file', {
@@ -70,11 +72,13 @@ export class AdsController {
     return this.adsService.create(post);
   }
 
+  @UseGuards(AuthGuard('jwt'))
   @Delete(':id')
   delete(@Param('id') id): Promise<Add> {
     return this.adsService.delete(id);
   }
 
+  @UseGuards(AuthGuard('jwt'))
   @Put(':id')
   @UseInterceptors(
     FileInterceptor('file', {
