@@ -13,3 +13,4 @@ Simple CRUD application with authentication, authorization, routing, image uploa
 * [TypeScript](https://github.com/Microsoft/TypeScript) - superset of JS which compiles to JS, providing compile-time type checking
 * [Passport](https://github.com/jaredhanson/passport) - a popular library used to implement JavaScript authentication
 * [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - a JavaScript json web tokens implementation by auth0
+
