@@ -6,10 +6,15 @@ import { AdsModule } from './ads/ads.module';
 import { MulterModule } from '@nestjs/platform-express';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
-import config from './config/keys';
+import config from '../config/keys';
 
 @Module({
-  imports: [AdsModule, MongooseModule.forRoot(config.mongoURI), AuthModule, UsersModule],
+  imports: [
+    AdsModule,
+    MongooseModule.forRoot(config.mongoURI),
+    AuthModule,
+    UsersModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
