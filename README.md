@@ -1,5 +1,4 @@
 # angular-nestjs
-A fullstack JavaScript project, using technologies from the modern stack, such as:
 
 A fullstack JavaScript project, using technologies from the modern stack, such as:
 
