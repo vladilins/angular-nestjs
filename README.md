@@ -14,3 +14,4 @@ Simple CRUD application with authentication, authorization, routing, image uploa
 * [Passport](https://github.com/jaredhanson/passport) - a popular library used to implement JavaScript authentication
 * [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - a JavaScript json web tokens implementation by auth0
 
+![Angular Nest.js](img.png)
