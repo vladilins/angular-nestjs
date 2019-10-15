@@ -1,6 +1,8 @@
-# angular-nestjs
+## angular-nestjs
 
-A fullstack JavaScript project, using technologies from the modern stack, such as:
+## [Live Website](http://ads-admin-nestjs.s3-website.us-east-2.amazonaws.com)
+
+Simple CRUD application with authentication, authorization, routing, image upload. Using technologies from the modern stack, such as:
 
 * [NestJS](https://github.com/nestjs/nest) - a JS backend framework providing architecture out of the box with a syntax similar to Angular
 * [Angular](https://github.com/angular/angular) - a JS frontend framework created by Google
